@@ -1,4 +1,4 @@
-import sys, pygame
+import sys, pygame, time
 pygame.init()
 
 size = width, height = 640, 480
@@ -11,6 +11,7 @@ ball = pygame.image.load('dvd-inverse.png')
 ballrect = ball.get_rect()
 
 while 1:
+    time.sleep(0.1)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
